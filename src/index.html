@@ -1,58 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Automobilismo</title>
-</head>
-<body>
-    <header>
-         <h1>Veículos do Brasil</h1>
-    </header>
-    <main>
-        <section>
-            <input type="text" placeholder="Digite o nome do veículo">
-            <button>Pesquisar</button>
-        </section>
-        <section class="resultados-pesquisa">
-            <div class="item-resultado">
-                <h2>
-                    <a href="https://www.youtube.com/watch?v=DybtTEtPRr4" target="_blank">Chevrolet - Opala</a>
-                </h2>
-                <p class="descricao-meta">
-                    O Opala, um ícone da indústria automobilística brasileira, marcou época entre as décadas de 60 e 90. Produzido pela Chevrolet, o modelo conquistou admiradores por seu design imponente, inspirado nos carros americanos da época, e por sua robustez mecânica. Disponível em diversas versões, desde a básica até a esportiva SS, o Opala atendia a diferentes públicos, tornando-se um verdadeiro símbolo de status e paixão nacional.
-                </p>
-                <a href="https://pt.wikipedia.org/wiki/Chevrolet_Opala" target="_blank">Saiba mais</a>
-            </div>
 
-            <div class="item-resultado">
-              <h2>
-                <a href="https://www.youtube.com/watch?v=SvEPFNgMy6c" target="_blank">Dodge - Charger</a>
-              </h2>
-              <p class="descricao-meta">
-                O Charger, um ícone da esportividade no Brasil, marcou época nos anos 70 com seu visual agressivo e motorização potente. Importado da matriz americana, o modelo rapidamente conquistou os brasileiros apaixonados por carros de alta performance, tornando-se um símbolo de status e velocidade. Apesar de sua curta trajetória no país, o Charger deixou um legado de admiração e saudosismo entre os entusiastas por muscle cars. 
-              </p>
-              <a href="https://pt.wikipedia.org/wiki/Dodge_Charger" target="_blank">Saiba mais</a>
-            </div>
-            
-            <div class="item-resultado">
-              <h2>
-                <a href="https://www.youtube.com/watch?v=OmmsP1UxQ6o" target="_blank">Ford - Maverick</a>
-              </h2>
-              <p class="descricao-meta">
-                O Maverick, lançado no Brasil em 1973, rapidamente se tornou um sucesso de vendas. Com visual esportivo inspirado nos muscle cars americanos, o modelo oferecia opções de motores potentes e um estilo único. Apesar de sua vida curta no mercado brasileiro, o Maverick deixou sua marca na história como um ícone da esportividade e do design arrojado.
-              </p>
-              <a href="https://pt.wikipedia.org/wiki/Ford_Maverick" target="_blank">Saiba mais</a>
-            </div>
-            
-        </section>
-    </main>
-    <footer>
-        <p>2024 - Veículos do Brasil. Todos os direitos reservados</p>
-        <p>Entre em contato pelo e-mail robson.teixeira@veiculos.com.br</p>
-    </footer>
-    <script src="./scripts/dados.js"></script>
-    <script src="./scripts/app.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Automobilismo</title>
+</head>
+
+<body>
+  <header>
+    <h1>Veículos do Brasil</h1>
+  </header>
+  <main>
+    <section>
+      <input type="text" placeholder="Digite o nome do veículo">
+      <button onclick="pesquisarVeiculo()">Pesquisar</button>
+    </section>
+    <section id="resultados-pesquisa" class="resultados-pesquisa">
+    </section>
+  </main>
+  <footer>
+    <p>2024 - Veículos do Brasil. Todos os direitos reservados</p>
+    <p>Entre em contato pelo e-mail robson.teixeira@veiculos.com.br</p>
+  </footer>
+  <script src="./scripts/dados.js"></script>
+  <script src="./scripts/app.js"></script>
 </body>
+
 </html>
